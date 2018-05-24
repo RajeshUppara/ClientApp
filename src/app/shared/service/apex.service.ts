@@ -7,6 +7,7 @@ export class ApexService {
     sessionUserEvent: EventEmitter<any> = new EventEmitter();
     menuEvent: EventEmitter<any> = new EventEmitter();
     loaderEvent: EventEmitter<any> = new EventEmitter();
+    titleUpdateEvent: EventEmitter<any> = new EventEmitter();
 
     constructor(private _domSanitizer: DomSanitizer, private _snackBarService: MatSnackBar) {  }
     showMessage(message: string) {
@@ -14,6 +15,11 @@ export class ApexService {
     }
     showLoader(show: Boolean) {
         this.loaderEvent.next(show);
+    }
+
+    updateTitle(title: string) {
+        console.log(title);
+        this.titleUpdateEvent.next(title);
     }
 
     sessionUserEmit(sessionUser: any) {

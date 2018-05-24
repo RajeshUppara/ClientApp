@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AppService } from '../../shared/service/app.service';
+
 @Component({
   selector: 'app-devdr-promotion',
   templateUrl: './devdr-promotion.component.html',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevdrPromotionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.appService.updateTitle("DevDr Promotion Page");
   }
-
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "key": "register",
+    "value": "Register",
+    "title": "Register Page",
+    "url": "/register"
+  },
+  {
+    "key": "devdrpromotion",
+    "value": "Dev-DR Promotion",
+    "title": "Dev Dr Promotion Page",
+    "url": "/promotion/devdr"
+  },
+  {
+    "key": "drpromotion",
+    "value": "Dr Promotion",
+    "title": "Dr Promotion Page",
+    "url": "/promotion/dr"
+  },
+  {
+    "key": "opppromotion",
+    "value": "Opp Promotion",
+    "title": "Opp Promotion Page",
+    "url": "/promotion/opp"
+  },
+  {
+    "key": "verifypromotion",
+    "value": "Verify Promotion",
+    "title": "Verify Promotion",
+    "url": "/promotion/verify"
+  }
+]

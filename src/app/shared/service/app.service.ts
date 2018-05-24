@@ -87,5 +87,8 @@ export class AppService {
     sessionClear() {
         Storage.clearSession();
     }
+    updateTitle(title: string) {
+        this.apexService.updateTitle(title);
+    }
 
 }

@@ -13,10 +13,12 @@ import {
     MatSlideToggleModule, MatMenuModule, MatSidenavModule, MatToolbarModule, MatListModule, 
     MatGridListModule, MatCardModule,  MatStepperModule, MatTabsModule, MatExpansionModule,
     MatButtonModule, MatChipsModule, MatIconModule, MatProgressSpinnerModule, MatProgressBarModule, 
-    MatTooltipModule, MatSnackBarModule,
+    MatTooltipModule, MatSnackBarModule,MatTreeModule
 } from '@angular/material';
+//import { MatTreeModule } from '@angular/material/tree';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BetterHighlightDirective } from './directives/better-highlight.directive';
 
 
 @NgModule({
@@ -26,10 +28,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
         MatSlideToggleModule, MatMenuModule, MatSidenavModule, MatToolbarModule, MatListModule, 
         MatGridListModule, MatCardModule,  MatStepperModule, MatTabsModule, MatExpansionModule,
         MatButtonModule, MatChipsModule, MatIconModule, MatProgressSpinnerModule, MatProgressBarModule, 
-        MatTooltipModule, MatSnackBarModule
+        MatTooltipModule, MatSnackBarModule, MatTreeModule
     ],
     declarations: [ 
-        FilterPipe, KeyValuesPipe, DecodeURIPipe, DatePipe, DateTimePipe, FlagPipe, CurrencyPipe
+        FilterPipe, KeyValuesPipe, DecodeURIPipe, DatePipe, DateTimePipe, FlagPipe, CurrencyPipe, BetterHighlightDirective
     ],
     exports: [
         CommonModule,FormsModule, ReactiveFormsModule, FlexLayoutModule, 
@@ -38,7 +40,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
         MatSlideToggleModule, MatMenuModule, MatSidenavModule, MatToolbarModule, MatListModule, 
         MatGridListModule, MatCardModule,  MatStepperModule, MatTabsModule, MatExpansionModule,
         MatButtonModule, MatChipsModule, MatIconModule, MatProgressSpinnerModule, MatProgressBarModule, 
-        MatTooltipModule, MatSnackBarModule
+        MatTooltipModule, MatSnackBarModule, MatTreeModule
     
     ]
 

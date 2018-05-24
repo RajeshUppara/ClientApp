@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../../shared/service/app.service';
 
 @Component({
   selector: 'app-opp-promotion',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OppPromotionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.appService.updateTitle("Oppn Promotion Page");
   }
 
 }
